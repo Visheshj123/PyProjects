@@ -19,7 +19,7 @@ plt.savefig('scatter.png')
 #k-means++ selects starting data point for centroid in a smart way
 k_means = KMeans(init = 'k-means++', n_clusters = 4, n_init = 12)
 k_means.fit(X)
-k_means_labels = k_means.labels_ #labels are the data points dedicated to a cluster
+k_means_labels = k_means.labels_ #array that shows which cluster each data point is assigned to
 print(len(set(k_means_labels))) #is 4
 
 #grabs data point of centroid
